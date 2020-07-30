@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Table Data Addition</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <script src="http://localhost:8080/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <table id="table" data-height="460">
+            <thead>
+                <tr>
+                    <th data-field="instrumentId">ID</th>
+                    <th data-field="name">Name</th>
+                    <th data-field="symbol">Symbol</th>
+                    <th data-field="instrumentType">Type</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <br><br>
+    <div style="margin-left: 150px">
+        <button type="button" onclick="deleteInstrument()">Delete instrument</button><br><br>
+        <label>ID</label><br>
+        <input type="text" id="delInst" name="inst id"><br><br>
+    </div>
+    <br><br>
+    <div style="margin-left: 150px">
+        <button type="button" onclick="addInstrument()">add instrument</button><br><br>
+        <label>ID</label><br>
+        <input type="text" id="instID"><br><br>
+        <label>name</label><br>
+        <input type="text" id="instName"><br><br>
+        <label>type</label><br>
+        <input type="text" id="instType"><br><br>
+        <label>symbol</label><br>
+        <input type="text" id="symbol"><br><br>
+    </div>
+
+
+</body>
+
+</html>
